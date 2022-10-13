@@ -61,8 +61,15 @@ html,body{
 content: "";
 display: table;
 clear: both;
-padding: 1% 3%;
+padding: 3% 3%;
 }
+
+.explora_div{
+    content: "";
+    display: table;
+    clear: both;
+    padding: 3% 7%;
+    }
 
 #div_fotos_top-5{
     width: 100%;
@@ -70,10 +77,27 @@ padding: 1% 3%;
     padding: 1%;
 }
 
-.fotos_top-5{
-width: 20%;
+#div_fotos_top-5{
+    width: 100%;
+    float: left;
+}
+
+.div_explora{
+    width: 100%;
+    float: left;
+    padding: 1%;
+}
+
+.fotos_explora{
+width: 25%;
 float: left;
 padding: 1%;
+}
+
+.fotos_top-5{
+    width: 20%;
+    float: left;
+    padding: 1%;
 }
 
 img{
@@ -97,11 +121,6 @@ img{
     padding: 1% 3%;
 }
 
-.fotos-explora{
-    width: 100%;
-    float: left;
-}
-
 .padding_explora{
     padding: 1% 2%;
 }
@@ -118,4 +137,80 @@ img{
     background-size: cover;
     background-position: center;
     border-radius: 5px;
+}
+
+.b_appname{
+    font-size: 30px;
+}
+.text_explora{
+    padding-right: 50%;
+}
+
+.centrado{
+    text-align: center;
+    padding: 1%;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen_fondo{
+    background:url(./img/header_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+}
+.text_explora2{
+    padding-right: 10%;
+}
+
+@media only screen and (max-width: 991px) {
+    .boton_responsive{
+        width: 49.5%;
+    }
+    .column-3{
+        width:50%;
+    }
+    .imagen_fondo{
+        background-size: 100% 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .column-3{
+        width:100%;
+    }
+    .img-explora{
+        height: 70vw;
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+    }
+    #orden_home{
+        padding-right: 0%;
+    }
+    
+    #top-5{
+    padding: 6% 3%;
+    }
+    .text_explora{
+        padding-right: 0%;
+    }
+    .fotos_explora{
+        width: 50%;
+        }
+    .explora_redimension{
+        height: 25vw;
+    }
+    .text_explora2{
+        padding-right: 0%;
+    }
+    .imagen_fondo{
+        height: 50vh;
+    }
 }
